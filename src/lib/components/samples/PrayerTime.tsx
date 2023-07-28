@@ -1,9 +1,3 @@
-'use client';
-
-// import { useState, useEffect } from 'react';
-
-// import { getColorFromImage } from '@/lib/utils';
-
 const PrayerTime = () => {
   const date = new Date();
   const day = new Intl.DateTimeFormat('id-ID', { day: 'numeric' }).format(date);
@@ -14,30 +8,17 @@ const PrayerTime = () => {
     date
   );
 
-  // const [colors, setColors] = useState<string>('#333');
-
-  // useEffect(() => {
-  //   const fetchColors = async () => {
-  //     const backgroundColor = await getColorFromImage('assets/jakarta.webp');
-  //     setColors(backgroundColor);
-  //   };
-
-  //   fetchColors();
-
-  //   // Cleanup function to prevent updating state on unmounted component
-  //   return () => {
-  //     // Add any cleanup logic here if needed
-  //   };
-  // }, []);
-
   return (
-    <div className="mt-2">
-      <header className="flex mb-4 items-center justify-between">
-        <h4 className="text-2sm font-semibold">
-          {`Assalamu'alaykum, ahlan wa sahlan 👋🏼`}
-        </h4>
-      </header>
+    <div className="pb-6 border-b-8 wrapper border-gray-100 dark:border-black w-full">
       <div className="grid grid-cols-1 gap-x-8 gap-y-16 lg:mx-0 lg:max-w-none">
+        <div className="mx-auto max-w-2xl lg:mx-0">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
+            {`Assalamu'alaykum`}
+          </h2>
+          <p className="mt-2 text-lg leading-8 text-gray-600 dark:text-white">
+            Ahlan wa Sahlan 👋🏼
+          </p>
+        </div>
         <article className="flex max-w-xl flex-col items-start justify-between">
           <div className="flex items-center gap-x-4 text-xs">
             <time dateTime="2020-03-16">

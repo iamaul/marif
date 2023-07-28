@@ -54,7 +54,7 @@ const RootLayout = ({ children }: RootLayoutProps) => {
         )}
       >
         <Layout>
-          <div className="flex-1">{children}</div>
+          <div className="w-full">{children}</div>
         </Layout>
       </body>
     </html>

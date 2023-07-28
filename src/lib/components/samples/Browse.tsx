@@ -18,8 +18,8 @@ const topics: Topic[] = [
 
 const BrowseTopics = () => {
   return (
-    <div className="mt-4 md:mt-8">
-      <header className="flex items-center justify-between">
+    <div className="wrapper">
+      <header className="flex items-center justify-between mb-2">
         <h2 className="text-2xl font-semibold">Referensi</h2>
       </header>
       <p className="text-xs sm:text-sm mb-4 line-clamp-3 leading-6">
