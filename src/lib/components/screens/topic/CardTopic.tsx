@@ -9,7 +9,7 @@ interface Props {
   image: string;
 }
 
-const TopicCard = (props: Props) => {
+const CardTopic = (props: Props) => {
   const { image, title } = props;
   const [colors, setColors] = useState<string>('#333');
 
@@ -30,16 +30,16 @@ const TopicCard = (props: Props) => {
   return (
     <button
       type="button"
-      className="block rounded p-4 px-2 md:px-4 md:aspect-[2/1] md:h-auto h-24 relative overflow-hidden transition-colors"
+      className="block rounded p-4 px-2 mb-2 md:px-4 md:aspect-[2/1] md:h-auto h-24 relative overflow-hidden transition-colors shadow-md"
       style={{
         backgroundColor: colors,
       }}
     >
-      <h3 className="font-semibold text-white text-base md:text-2xl w-[calc(100%_-_3.25rem)] md:w-[calc(100%_-_4rem)] wrap-balance">
+      <h3 className="font-bold text-white text-base lg:text-1xl w-[calc(100%_-_3.25rem)] md:w-[calc(100%_-_4rem)] wrap-balance">
         {title}
       </h3>
       <img
-        className="absolute rounded-lg shadow-xl aspect-square object-cover w-20 md:w-24 rotate-12 -right-4 bottom-0 transition-transform group-hover:-translate-x-4"
+        className="absolute rounded-lg shadow-xl aspect-square object-cover w-20 md:w-24 rotate-12 -right-5 bottom-0 transition-transform group-hover:-translate-x-4"
         src={image}
         alt={title}
       />
@@ -47,4 +47,4 @@ const TopicCard = (props: Props) => {
   );
 };
 
-export default TopicCard;
+export default CardTopic;

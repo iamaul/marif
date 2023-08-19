@@ -1,15 +1,15 @@
 import type { NextPage } from 'next';
 
-import Banner from '@/lib/components/samples/Banner';
-import BrowseTopics from '@/lib/components/samples/Browse';
-import PrayerTime from '@/lib/components/samples/PrayerTime';
+import Article from '@/lib/components/screens/Article';
+import Banner from '@/lib/components/screens/Banner';
+import Topics from '@/lib/components/screens/topic';
 
 const Home: NextPage = () => {
   return (
     <div className="pb-0 w-full flex flex-col">
       <Banner />
-      <PrayerTime />
-      <BrowseTopics />
+      <Article />
+      <Topics />
     </div>
   );
 };

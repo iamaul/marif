@@ -1,4 +1,4 @@
-const PrayerTime = () => {
+const Article = () => {
   const date = new Date();
   const day = new Intl.DateTimeFormat('id-ID', { day: 'numeric' }).format(date);
   const month = new Intl.DateTimeFormat('id-ID', { month: 'long' }).format(
@@ -110,4 +110,4 @@ const PrayerTime = () => {
   );
 };
 
-export default PrayerTime;
+export default Article;
