@@ -6,11 +6,11 @@ import { cn } from '@/lib/utils';
 
 import '@/lib/styles/globals.css';
 
-const APP_NAME = 'nextarter-tailwind';
+const APP_NAME = 'Marif';
 
 export const metadata: Metadata = {
   title: APP_NAME,
-  description: 'Next.js + TailwindCSS v3 + TypeScript template',
+  description: 'Mengupas hikmah ilmu kehidupan pemuda masa kini.',
   viewport: {
     width: 'device-width',
     initialScale: 1,
@@ -26,16 +26,16 @@ export const metadata: Metadata = {
   },
   themeColor: '#FFFFFF',
   openGraph: {
-    url: 'https://nextarter-tailwind.sznm.dev',
-    title: 'nextarter-tailwind',
-    description: 'Next.js + TailwindCSS v3 + TypeScript template',
+    url: 'https://marif.vercel.app',
+    title: 'marif',
+    description: 'Mengupas hikmah ilmu kehidupan pemuda masa kini.',
     images: {
-      url: 'https://og-image.sznm.dev/**nextarter-tailwind**.sznm.dev.png?theme=dark&md=1&fontSize=125px&images=https%3A%2F%2Fsznm.dev%2Favataaars.svg&widths=250',
-      alt: 'nextarter-tailwind.sznm.dev og-image',
+      url: 'https://marif.vercel.app/assets/header_logo.png',
+      alt: 'Marif',
     },
   },
   twitter: {
-    creator: '@sozonome',
+    creator: '@marif.theofficial',
     card: 'summary_large_image',
   },
 };
